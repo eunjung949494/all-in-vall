@@ -32,7 +32,7 @@ export default function Chat() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const sendMessage = async (text) => {
+  const sendMessage = async (text: string) => {
     if (!text.trim() || loading) return;
     setMessages((prev) => [...prev, { role: "user", text }]);
     setInput("");
