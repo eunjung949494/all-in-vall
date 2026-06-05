@@ -18,7 +18,7 @@ export default function Players() {
   const router = useRouter();
   const [team, setTeam] = useState<typeof teams[0] | null>(null);
   const [filter, setFilter] = useState("전체");
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<number | null>(null);
 
   useEffect(() => {
     const savedTeam = localStorage.getItem("team");
