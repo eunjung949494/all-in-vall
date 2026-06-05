@@ -13,7 +13,7 @@ const suggestions = [
 
 export default function Chat() {
   const router = useRouter();
-  const [team, setTeam] = useState(null);
+  const [team, setTeam] = useState<typeof teams[0] | null>(null);
   const [messages, setMessages] = useState([
     { role: "bot", text: "안녕하세요! 배구에 대해 궁금한 게 있으면 뭐든 물어보세요 🏐" }
   ]);

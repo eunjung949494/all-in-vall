@@ -15,7 +15,7 @@ const stadiums = [
 
 export default function Stadium() {
   const router = useRouter();
-  const [team, setTeam] = useState(null);
+  const [team, setTeam] = useState<typeof teams[0] | null>(null);
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
