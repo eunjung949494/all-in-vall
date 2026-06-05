@@ -14,7 +14,7 @@ const navItems = [
 export default function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
-  const [team, setTeam] = useState(null);
+  const [team, setTeam] = useState<typeof teams[0] | null>(null);
 
   useEffect(() => {
     const savedTeam = localStorage.getItem("team");
