@@ -1,33 +1,33 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const { message } = await req.json();
+  try {
+    const { message } = await req.json();
 
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              {
-                text: `너는 배구 전문 AI 어시스턴트야. 배구 입문자도 쉽게 이해할 수 있도록 친절하고 쉽게 설명해줘. 
-                배구 룰, 포지션, 용어, 선수, 경기 등에 관한 질문에 답해줘.
-                한국어로 대답하고, 너무 길지 않게 핵심만 설명해줘.
-                
-                사용자 질문: ${message}`,
-              },
-            ],
-          },
-        ],
-      }),
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json({ text: "API 키가 없어요: " + JSON.stringify(Object.keys(process.env).filter(k => k.includes('GEMINI'))) });
     }
-  );
 
-  const data = await res.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "죄송해요, 다시 질문해주세요.";
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: `너는 배구 전문 AI 어시스턴트야. 한국어로 짧게 답해줘. 질문: ${message}` }] }],
+        }),
+      }
+    );
 
-  return NextResponse.json({ text });
+    const data = await res.json();
+    if (data.error) {
+      return NextResponse.json({ text: "Gemini 에러: " + data.error.message });
+    }
+
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "응답 없음";
+    return NextResponse.json({ text });
+  } catch (e: any) {
+    return NextResponse.json({ text: "에러: " + e.message });
+  }
 }
