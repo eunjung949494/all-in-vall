@@ -9,6 +9,7 @@ const navItems = [
   { href: "/players", label: "선수", icon: "⭐" },
   { href: "/stadium", label: "경기장", icon: "📍" },
   { href: "/chat", label: "챗봇", icon: "💬" },
+  { href: "/vbti", label: "VBTI", icon: "🏐" },
 ];
 
 export default function Sidebar() {
