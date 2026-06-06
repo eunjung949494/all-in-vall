@@ -33,7 +33,7 @@ export default function Sidebar() {
 
       {team && (
         <div onClick={() => { localStorage.removeItem("team"); router.push("/onboarding"); }} style={{ margin: "14px 16px 0", padding: "10px 14px", backgroundColor: team.color, borderRadius: "10px", cursor: "pointer", display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src={team.emblem} alt={team.shortName} style={{ width: "32px", height: "32px", objectFit: "contain", filter: "brightness(0) invert(1)" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <img src={team.emblem} alt={team.shortName} style={{ width: "32px", height: "32px", objectFit: "contain", filter: team.darkLogo ? "brightness(0) invert(1)" : "none" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <div>
             <p style={{ fontSize: "13px", fontWeight: 800, color: team.textColor }}>{team.shortName}</p>
             <p style={{ fontSize: "10px", color: team.textColor, opacity: 0.7, marginTop: "1px" }}>구단 변경하기 →</p>

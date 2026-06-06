@@ -37,7 +37,7 @@ export default function Onboarding() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginBottom: "24px" }}>
           {filtered.map((team) => (
             <button key={team.id} onClick={() => setSelected(team.id)} style={{ padding: "16px", border: selected === team.id ? "2px solid " + team.color : "2px solid #f0f0f0", borderRadius: "12px", backgroundColor: selected === team.id ? team.color : "#fff", color: selected === team.id ? team.textColor : "#000", cursor: "pointer", textAlign: "left", transition: "all 0.15s", boxShadow: selected === team.id ? "0 4px 12px " + team.color + "44" : "0 1px 4px rgba(0,0,0,0.06)", display: "flex", alignItems: "center", gap: "10px" }}>
-              <img src={team.emblem} alt={team.shortName} style={{ width: "36px", height: "36px", objectFit: "contain", filter: selected === team.id ? "brightness(0) invert(1)" : "none" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+              <img src={team.emblem} alt={team.shortName} style={{ width: "36px", height: "36px", objectFit: "contain", filter: selected === team.id && team.darkLogo ? "brightness(0) invert(1)" : "none" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
               <div>
                 <p style={{ fontSize: "13px", fontWeight: 800 }}>{team.shortName}</p>
                 <p style={{ fontSize: "10px", opacity: 0.7, marginTop: "2px" }}>{team.gender}부</p>
