@@ -8,10 +8,10 @@ export const mockPlayers = [
     "number": 14,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_0000741.webp",
     "stats": {
-      "score": 0,
+      "score": 460,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 108
     }
   },
   {
@@ -85,7 +85,7 @@ export const mockPlayers = [
     "stats": {
       "score": 0,
       "attack": 0,
-      "serve": 0,
+      "serve": 29,
       "block": 0
     }
   },
@@ -218,9 +218,9 @@ export const mockPlayers = [
     "number": 12,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000542.webp",
     "stats": {
-      "score": 0,
+      "score": 466,
       "attack": 0,
-      "serve": 0,
+      "serve": 49,
       "block": 0
     }
   },
@@ -233,8 +233,8 @@ export const mockPlayers = [
     "number": 27,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000543.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
+      "score": 749,
+      "attack": 39.04,
       "serve": 0,
       "block": 0
     }
@@ -428,8 +428,8 @@ export const mockPlayers = [
     "number": 99,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000170.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
+      "score": 948,
+      "attack": 44.82,
       "serve": 0,
       "block": 0
     }
@@ -461,7 +461,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 106
     }
   },
   {
@@ -641,7 +641,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 80
     }
   },
   {
@@ -686,7 +686,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 66
     }
   },
   {
@@ -700,7 +700,7 @@ export const mockPlayers = [
     "stats": {
       "score": 0,
       "attack": 0,
-      "serve": 0,
+      "serve": 29,
       "block": 0
     }
   },
@@ -818,9 +818,9 @@ export const mockPlayers = [
     "number": 9,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000538.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
-      "serve": 0,
+      "score": 586,
+      "attack": 37.55,
+      "serve": 30,
       "block": 0
     }
   },
@@ -1031,7 +1031,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 78
     }
   },
   {
@@ -1103,8 +1103,8 @@ export const mockPlayers = [
     "number": 17,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000149.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
+      "score": 746,
+      "attack": 41.19,
       "serve": 0,
       "block": 0
     }
@@ -1150,8 +1150,8 @@ export const mockPlayers = [
     "stats": {
       "score": 0,
       "attack": 0,
-      "serve": 0,
-      "block": 0
+      "serve": 29,
+      "block": 85
     }
   },
   {
@@ -1361,7 +1361,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 73
     }
   },
   {
@@ -1433,9 +1433,9 @@ export const mockPlayers = [
     "number": 5,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000345.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
-      "serve": 0,
+      "score": 1083,
+      "attack": 47.33,
+      "serve": 43,
       "block": 0
     }
   },
@@ -1451,7 +1451,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 61
     }
   },
   {
@@ -1601,7 +1601,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 84
     }
   },
   {
@@ -1646,7 +1646,7 @@ export const mockPlayers = [
       "score": 0,
       "attack": 0,
       "serve": 0,
-      "block": 0
+      "block": 83
     }
   },
   {
@@ -1688,9 +1688,9 @@ export const mockPlayers = [
     "number": 19,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000425.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
-      "serve": 0,
+      "score": 918,
+      "attack": 42.3,
+      "serve": 39,
       "block": 0
     }
   },
@@ -1840,7 +1840,7 @@ export const mockPlayers = [
     "stats": {
       "score": 0,
       "attack": 0,
-      "serve": 0,
+      "serve": 19,
       "block": 0
     }
   },
@@ -1930,7 +1930,7 @@ export const mockPlayers = [
     "stats": {
       "score": 0,
       "attack": 0,
-      "serve": 0,
+      "serve": 28,
       "block": 0
     }
   },
@@ -2003,9 +2003,9 @@ export const mockPlayers = [
     "number": 7,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000536.webp",
     "stats": {
-      "score": 0,
-      "attack": 0,
-      "serve": 0,
+      "score": 880,
+      "attack": 47.25,
+      "serve": 26,
       "block": 0
     }
   },
@@ -2018,7 +2018,7 @@ export const mockPlayers = [
     "number": 11,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000537.webp",
     "stats": {
-      "score": 0,
+      "score": 431,
       "attack": 0,
       "serve": 0,
       "block": 0

@@ -68,7 +68,9 @@ function WorldCup({ onClose, team, players }: { onClose: () => void; team: any; 
             <img src={player.image} alt={player.name} style={{ width: "64px", height: "64px", borderRadius: "50%", objectFit: "cover", margin: "0 auto 12px", display: "block", border: "2px solid #f0f0f0" }} onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
             <p style={{ fontSize: "15px", fontWeight: 900, marginBottom: "4px" }}>{player.name}</p>
             <p style={{ fontSize: "11px", color: "#aaa", marginBottom: "4px" }}>{player.team}</p>
-            <p style={{ fontSize: "10px", color: "#bbb" }}>{player.position}</p>
+            <p style={{ fontSize: "10px", color: team.color, fontWeight: 700, marginBottom: "2px" }}>
+              {player.stats.score > 0 ? `🔥 시즌 ${player.stats.score}점` : player.stats.block > 0 ? `🧱 블로킹 ${player.stats.block}개` : player.stats.serve > 0 ? `⚡ 서브 ${player.stats.serve}개` : player.position}
+            </p>
           </button>
         ))}
       </div>
