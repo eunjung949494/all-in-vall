@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { teams } from "@/lib/teams";
 import { mockPlayers } from "@/lib/players";
 
-const positions = ["전체", "아웃사이드 히터", "미들 블로커", "세터", "리베로", "반대 스파이커"];
+const positions = ["전체", "아웃사이드 히터", "미들 블로커", "세터", "리베로", "아포짓 스파이커"];
 
 const vbtiQuestions = [
   { q: "경기에서 제일 짜릿한 순간은?", a: "강스파이크가 꽂힐 때", b: "수비로 공을 살려낼 때" },
@@ -16,7 +16,7 @@ const vbtiQuestions = [
 
 const vbtiResults = [
   { type: "에이스형", emoji: "⚡", desc: "화려하고 강렬하게! 팀의 득점을 책임지는 공격형 플레이어 스타일이에요. 언제나 앞에서 치고 나가는 것을 즐기는 당신은 에이스 기질이 넘쳐요.", position: "아웃사이드 히터", teamId: "gs", teamName: "GS칼텍스", playerName: "실바" },
-  { type: "만능형", emoji: "🌟", desc: "공격도 수비도 완벽하게! 어떤 상황에서도 팀을 위해 헌신하는 올라운더 스타일이에요. 유연하고 적응력이 뛰어난 당신은 어디서든 빛나요.", position: "반대 스파이커", teamId: "jeongkwanjang", teamName: "정관장", playerName: "킨켈라" },
+  { type: "만능형", emoji: "🌟", desc: "공격도 수비도 완벽하게! 어떤 상황에서도 팀을 위해 헌신하는 올라운더 스타일이에요. 유연하고 적응력이 뛰어난 당신은 어디서든 빛나요.", position: "아포짓 스파이커", teamId: "jeongkwanjang", teamName: "정관장", playerName: "킨켈라" },
   { type: "두뇌형", emoji: "🧠", desc: "냉철하고 전략적으로! 경기 흐름을 읽고 팀을 조율하는 지휘관 스타일이에요. 화려함보다 정확함을 추구하는 당신은 세터 기질이 있어요.", position: "세터", teamId: "gs", teamName: "GS칼텍스", playerName: "최윤영" },
   { type: "철벽형", emoji: "🧱", desc: "묵묵하고 강인하게! 상대의 공격을 막아내는 수비형 플레이어 스타일이에요. 화려하진 않지만 팀이 가장 필요로 하는 존재예요.", position: "미들 블로커", teamId: "heungkuk", teamName: "흥국생명", playerName: "변지수" },
   { type: "수호신형", emoji: "🛡️", desc: "팀의 마지막 보루! 어떤 공도 살려내는 수비 전문가 스타일이에요. 조용하지만 가장 믿음직스러운 존재, 그게 바로 당신이에요.", position: "리베로", teamId: "kepco", teamName: "도로공사", playerName: "한다혜" },
@@ -187,9 +187,13 @@ export default function Players() {
     return posMatch && teamMatch;
   });
 
-  const worldCupPlayers = mockPlayers
-    .filter(p => ["아웃사이드 히터", "반대 스파이커", "미들 블로커"].includes(p.position))
-    .slice(0, 8);
+  const worldCupPlayers = (() => {
+    const myTeamPlayers = mockPlayers.filter(p => p.teamId === team.id);
+    if (myTeamPlayers.length >= 8) return myTeamPlayers.slice(0, 8);
+    // 8명 미만이면 전체에서 채우기
+    const others = mockPlayers.filter(p => p.teamId !== team.id).slice(0, 8 - myTeamPlayers.length);
+    return [...myTeamPlayers, ...others];
+  })();
 
   return (
     <div style={{ padding: "32px" }}>

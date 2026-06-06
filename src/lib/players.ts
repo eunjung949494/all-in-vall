@@ -229,7 +229,7 @@ export const mockPlayers = [
     "name": "카리",
     "team": "현대건설",
     "teamId": "hyundai",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 27,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000543.webp",
     "stats": {
@@ -274,7 +274,7 @@ export const mockPlayers = [
     "name": "조보윤",
     "team": "현대건설",
     "teamId": "hyundai",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 16,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000548.webp",
     "stats": {
@@ -304,7 +304,7 @@ export const mockPlayers = [
     "name": "황연주",
     "team": "페퍼저축은행",
     "teamId": "pepper",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 4,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_0000138.webp",
     "stats": {
@@ -424,7 +424,7 @@ export const mockPlayers = [
     "name": "모마",
     "team": "페퍼저축은행",
     "teamId": "pepper",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 99,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000170.webp",
     "stats": {
@@ -769,7 +769,7 @@ export const mockPlayers = [
     "name": "신은지",
     "team": "IBK기업은행",
     "teamId": "ibk",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 16,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000313.webp",
     "stats": {
@@ -814,7 +814,7 @@ export const mockPlayers = [
     "name": "자네테",
     "team": "IBK기업은행",
     "teamId": "ibk",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 9,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000538.webp",
     "stats": {
@@ -1009,7 +1009,7 @@ export const mockPlayers = [
     "name": "문지윤",
     "team": "흥국생명",
     "teamId": "heungkuk",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 22,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_0002112.webp",
     "stats": {
@@ -1099,7 +1099,7 @@ export const mockPlayers = [
     "name": "레베카",
     "team": "흥국생명",
     "teamId": "heungkuk",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 17,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000149.webp",
     "stats": {
@@ -1429,7 +1429,7 @@ export const mockPlayers = [
     "name": "실바",
     "team": "GS칼텍스",
     "teamId": "gs",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 5,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000345.webp",
     "stats": {
@@ -1684,7 +1684,7 @@ export const mockPlayers = [
     "name": "빅토리아",
     "team": "정관장",
     "teamId": "jeongkwanjang",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 19,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000425.webp",
     "stats": {
@@ -1999,7 +1999,7 @@ export const mockPlayers = [
     "name": "조이",
     "team": "도로공사",
     "teamId": "kepco",
-    "position": "반대 스파이커",
+    "position": "아포짓 스파이커",
     "number": 7,
     "image": "https://cdn.kovo.co.kr/resources/players/bio_1000536.webp",
     "stats": {

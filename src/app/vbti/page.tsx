@@ -57,7 +57,7 @@ const results = [
     type: "만능형",
     emoji: "🌟",
     desc: "공격도 수비도 완벽하게! 어떤 상황에서도 팀을 위해 헌신하는 올라운더 스타일이에요. 유연하고 적응력이 뛰어난 당신은 어디서든 빛나요.",
-    position: "반대 스파이커",
+    position: "아포짓 스파이커",
     teamId: "jeongkwanjang",
     teamName: "정관장",
     playerName: "킨켈라",
